@@ -411,27 +411,37 @@ a {
 
 
 @media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
     .row {
         flex-direction: column
     }
 
-    .register .fields .row {
+    .register {
+        margin-top: 0;
         margin-bottom: 0;
 
-        .input-wrapper {
-            margin-right: 0;
-            margin-bottom: 14px;
-        }
-        .select-wrapper {
-            margin-right: 0;
-            margin-bottom: 14px;
-        }
-        .password-wrapper {
-            margin-right: 0;
-            margin-bottom: 14px;
-        }
 
-    } 
+        .fields .row {
+            margin-bottom: 0;
+    
+            .input-wrapper {
+                margin-right: 0;
+                margin-bottom: 28px;
+            }
+            .select-wrapper {
+                margin-right: 0;
+                margin-bottom: 28px;
+            }
+            .password-wrapper {
+                margin-right: 0;
+                margin-bottom: 28px;
+            }
+    
+        } 
+    }
 
     .button {
         margin: 30px auto 0;

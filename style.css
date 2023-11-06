@@ -335,24 +335,33 @@ a:hover {
 }
 
 @media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+
     .row {
         flex-direction: column;
     }
 
+    .register {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     .register .fields .row {
         margin-bottom: 0;
     }
     .register .fields .row .input-wrapper {
         margin-right: 0;
-        margin-bottom: 14px;
+        margin-bottom: 28px;
     }
     .register .fields .row .select-wrapper {
         margin-right: 0;
-        margin-bottom: 14px;
+        margin-bottom: 28px;
     }
     .register .fields .row .password-wrapper {
         margin-right: 0;
-        margin-bottom: 14px;
+        margin-bottom: 28px;
     }
 
     .button {
