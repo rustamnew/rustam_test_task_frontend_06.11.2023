@@ -98,6 +98,7 @@ a:hover {
     display: flex;
     margin-right: 14px;
     flex-basis: 49%;
+    position: relative;
 }
 .register .fields .row .input-wrapper:last-child {
     margin-right: 0;
@@ -126,6 +127,7 @@ a:hover {
 .register .fields .row .select-wrapper {
     margin-right: 14px;
     flex-basis: 49%;
+    position: relative;
 }
 .register .fields .row .select-wrapper:last-child {
     margin-right: 0;
@@ -232,6 +234,7 @@ a:hover {
 }
 .register .ok h3 {
     margin-bottom: 3rem;
+    text-align: center;
 }
 .register .ok a {
     font-weight: 600;
