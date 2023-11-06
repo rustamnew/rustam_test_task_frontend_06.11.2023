@@ -1,0 +1,361 @@
+@import url(./css/fonts.css);
+@import url(./css/normalize.css);
+html {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    background-color: #cacaca;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+a {
+    color: #3586FF;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    width: 18.75rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    background: rgba(73, 122, 218, 0.2);
+    border-color: transparent;
+    cursor: pointer;
+    color: #497ADA;
+    margin-left: auto;
+}
+.button:hover {
+    background: rgba(43, 92, 188, 0.2);
+    text-decoration: none;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #FFF;
+    margin: auto;
+    margin-top: 100px;
+}
+.register .heading {
+    padding: 20px 30px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.register .heading h2 {
+    font-weight: 700;
+    font-size: 1.1875rem;
+}
+.register .fields {
+    padding: 18px 30px 0;
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+.register .fields .title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 34px;
+}
+.register .fields .row {
+    margin-bottom: 30px;
+}
+.register .fields .row.flex-end {
+    justify-content: flex-end;
+}
+.register .fields .row .input-wrapper {
+    display: flex;
+    margin-right: 14px;
+    flex-basis: 49%;
+}
+.register .fields .row .input-wrapper:last-child {
+    margin-right: 0;
+}
+.register .fields .row .password-wrapper {
+    position: relative;
+    flex-basis: 49%;
+    margin-right: 14px;
+}
+.register .fields .row .password-wrapper:last-child {
+    margin-right: 0;
+}
+.register .fields .row .password-wrapper .password-icon {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.register .fields .row .password-wrapper input.password[type=password] ~ .password-icon.showed {
+    display: none;
+}
+.register .fields .row .password-wrapper input.password[type=text] ~ .password-icon.hided {
+    display: none;
+}
+.register .fields .row .select-wrapper {
+    margin-right: 14px;
+    flex-basis: 49%;
+}
+.register .fields .row .select-wrapper:last-child {
+    margin-right: 0;
+}
+.register .fields .row .select-wrapper .input {
+    margin-right: 0;
+}
+.register .buttons {
+    padding: 23px 30px;
+}
+.register .buttons .row {
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.register .buttons .switcher-wrapper {
+    display: flex;
+}
+.register .buttons .switcher-wrapper .switch {
+    position: relative;
+    display: inline-block;
+    width: 2.43rem;
+    height: 1.18rem;
+}
+.register .buttons .switcher-wrapper .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.register .buttons .switcher-wrapper .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.register .buttons .switcher-wrapper .switch .slider::before {
+    position: absolute;
+    content: "";
+    width: 1.08rem;
+    height: 1.08rem;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+    border: 1px solid #cdced8;
+}
+.register .buttons .switcher-wrapper .switch input:checked + .slider {
+    background-color: #3586FF;
+}
+.register .buttons .switcher-wrapper .switch input:focus + .slider {
+    box-shadow: 0 0 1px #3586FF;
+}
+.register .buttons .switcher-wrapper .switch input:checked + .slider:before {
+    -webkit-transform: translateX(1.28rem);
+    -ms-transform: translateX(1.28rem);
+    transform: translateX(1.28rem);
+}
+.register .buttons .switcher-wrapper .row-info {
+    margin-left: 5px;
+}
+.register .buttons .switcher-wrapper .row-info .title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+.register .buttons .switcher-wrapper .row-info .subtitle {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #696977;
+}
+.register .buttons .checkbox-wrapper {
+    display: flex;
+}
+.register .buttons .checkbox-wrapper .checkbox {
+    display: flex;
+}
+.register .buttons .checkbox-wrapper .row-info {
+    margin-left: 15px;
+}
+.register .buttons .checkbox-wrapper .row-info .title {
+    font-size: 0.875rem;
+    max-width: 508px;
+    line-height: 1.5;
+}
+.register .ok {
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #32a860;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register .ok h3 {
+    margin-bottom: 3rem;
+}
+.register .ok a {
+    font-weight: 600;
+    color: #fff;
+}
+.register .ok a:hover {
+    text-decoration: underline;
+}
+
+.input {
+    width: 100%;
+    color: #9292A0;
+    position: relative;
+}
+.input.text {
+    min-width: 250px;
+    padding: 9px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 1px solid #E6E6EB;
+}
+.input.email {
+    min-width: 250px;
+    padding: 9px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 1px solid #E6E6EB;
+}
+.input.password {
+    min-width: 250px;
+    padding: 9px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 1px solid #E6E6EB;
+}
+.input.select {
+    min-width: 250px;
+    padding: 9px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    border: 1px solid #E6E6EB;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(./icons/down.svg);
+    background-repeat: no-repeat;
+    background-position: right 5% top 48%;
+    background-size: 1rem;
+}
+.input.select option:not([disabled]) {
+    color: #000;
+}
+.input.checkbox {
+    min-width: 1.18rem;
+    height: 1.18rem;
+    border-radius: 5px;
+    overflow: hidden;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.input.checkbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #a1a1a1;
+    background-color: #fff;
+}
+.input.checkbox:checked::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    background-color: #3586FF;
+    background-image: url(./icons/check.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.input.error {
+    border: 1px solid red;
+}
+.input.error + .label-required {
+    color: red;
+    display: flex;
+    position: absolute;
+    top: 109%;
+    left: 2%;
+}
+.input + .label-required {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .register .fields .row {
+        margin-bottom: 0;
+    }
+    .register .fields .row .input-wrapper {
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+    .register .fields .row .select-wrapper {
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+    .register .fields .row .password-wrapper {
+        margin-right: 0;
+        margin-bottom: 14px;
+    }
+
+    .button {
+        margin: 30px auto 0;
+    }
+}
